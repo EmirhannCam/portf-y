@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profesyonel Web Tasarım ve Dijital Çözümler | Lumenix Studio</title>
+	<meta name="description" content="Web tasarım, logo tasarım, dijital medya yönetimi, mobil uygulama geliştirme ve drone ile reklam çekimi hizmetleri. Modern, aydınlık ve responsive çözümler.">
+	<meta name="keywords" content="web tasarım, logo tasarım, dijital medya, mobil uygulama, drone çekimi, reklam">
+	<link rel="canonical" href="https://www.ornek-domain.com/">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<div id="backdrop" class="backdrop" hidden></div>
+	<header class="site-header" id="top">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Anasayfa">
+        <svg class="brand-mark" width="32" height="32" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#60a5fa"/>
+              <stop offset="50%" stop-color="#a78bfa"/>
+              <stop offset="100%" stop-color="#34d399"/>
+            </linearGradient>
+          </defs>
+          <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#lg)"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">LS</text>
+        </svg>
+        <span class="brand-text">Lumenix Studio</a></span>
+      </a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menüyü aç/kapat">
+        <span class="">Menü</span>
+      </button>
+      <nav id="primary-nav" class="nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html" class="is-active">Anasayfa</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#portfolyo">Portfolyo</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+	<section class="hero" aria-labelledby="hero-heading">
+		<div class="container">
+			<div class="hero-content" data-reveal>
+				<h1 id="hero-heading">Modern, Dinamik ve Güçlü Dijital Deneyimler</h1>
+				<p>Markanızı hız, tasarım ve teknolojiyle buluşturuyoruz. Web tasarım, logo, dijital medya, mobil uygulama ve drone çekimi ile uçtan uca büyüme.</p>
+				<div class="hero-cta">
+					<a class="btn primary" href="#iletisim">Teklif Al</a>
+					<a class="btn ghost" href="#portfolyo">Çalışmalarımıza Göz At</a>
+				</div>
+				<ul class="hero-badges">
+					<li> Hız ve Performans</li>
+					<li> SEO ve Erişilebilirlik</li>
+					<li> Modern UI/UX</li>
+				</ul>
+			</div>
+			<div class="hero-media" role="img" aria-label="Dijital ajans illüstrasyonu"></div>
+		</div>
+	</section>
+
+	<!-- Trusted logos section removed as requested -->
+
+	<section id="hizmetler" class="section services" aria-labelledby="services-heading">
+		<div class="container">
+			<h2 id="services-heading">Hizmetlerimiz</h2>
+			<ul class="service-grid" role="list">
+				<li class="card" data-reveal>
+					<div class="icon" aria-hidden="true">🖥️</div>
+					<h3>Web Tasarım</h3>
+					<p>Hızlı, SEO uyumlu ve erişilebilir web siteleri. Kurumsal kimliğinize uygun özgün tasarımlar.</p>
+				</li>
+				<li class="card" data-reveal>
+					<div class="icon" aria-hidden="true">🎨</div>
+					<h3>Logo Tasarım</h3>
+					<p>Akılda kalıcı, ölçeklenebilir ve marka stratejinizi yansıtan logo çalışmaları.</p>
+				</li>
+				<li class="card" data-reveal>
+					<div class="icon" aria-hidden="true">📱</div>
+					<h3>Dijital Medya</h3>
+					<p>Sosyal medya içerik üretimi, reklam yönetimi ve performans optimizasyonu.</p>
+				</li>
+				<li class="card" data-reveal>
+					<div class="icon" aria-hidden="true">📲</div>
+					<h3>Mobil Uygulama</h3>
+					<p>iOS ve Android için kullanıcı odaklı, performanslı mobil deneyimler.</p>
+				</li>
+				<li class="card" data-reveal>
+					<div class="icon" aria-hidden="true">🚁</div>
+					<h3>Drone ile Reklam Çekimi</h3>
+					<p>Etkinlik, mekan ve ürünleriniz için sinematik havadan çekimler.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="cta-band" aria-label="Hızlı teklif">
+		<div class="container" data-reveal>
+			<h2>Birlikte fark yaratalım</h2>
+			<p>İhtiyacınızı 15 dakikalık ücretsiz görüşmede netleştirelim.</p>
+			<a class="btn primary" href="#iletisim">Ücretsiz Görüşme Planla</a>
+		</div>
+	</section>
+
+	<section id="portfolyo" class="section portfolio" aria-labelledby="portfolio-heading">
+		<div class="container">
+			<div class="section-head">
+				<h2 id="portfolio-heading">Portfolyo</h2>
+				<div class="filters" role="tablist" aria-label="Portfolyo filtreleri">
+					<button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Tümü</button>
+					<button class="chip" data-filter="web">Web</button>
+					<button class="chip" data-filter="logo">Logo</button>
+					<button class="chip" data-filter="dijital">Dijital Medya</button>
+					<button class="chip" data-filter="mobil">Mobil</button>
+					<button class="chip" data-filter="drone">Drone</button>
+				</div>
+			</div>
+			<ul class="portfolio-grid" id="portfolioGrid" role="list">
+				<!-- JS ile doldurulacak; her kartta slider bulunacak -->
+			</ul>
+			<div class="packages-grid modern-packages">
+				<div class="package-card" data-reveal>
+					<div class="package-gradient"></div>
+					<h3 class="package-title">Kurumsal Web Sitesi</h3>
+					<div class="package-price">₺ 15.000 +</div>
+					<ul class="package-features">
+						<li>Responsive Tasarım</li>
+						<li>SEO Optimizasyonu</li>
+						<li>5-10 Sayfa</li>
+						<li>İletişim Formu</li>
+						<li>Google Analytics</li>
+						<li>3 Ay Destek</li>
+					</ul>
+					<a class="btn primary" href="#iletisim">Teklif Al</a>
+				</div>
+				<div class="package-card popular" data-reveal>
+					<span class="package-badge">Popüler</span>
+					<div class="package-gradient"></div>
+					<h3 class="package-title">E-Ticaret Sitesi</h3>
+					<div class="package-price">₺ 25.000 +</div>
+					<ul class="package-features">
+						<li>Responsive Tasarım</li>
+						<li>SEO Optimizasyonu</li>
+						<li>Ürün Kataloğu</li>
+						<li>Ödeme Sistemi</li>
+						<li>Stok Yönetimi</li>
+						<li>6 Ay Destek</li>
+					</ul>
+					<a class="btn primary" href="#iletisim">Teklif Al</a>
+				</div>
+				<div class="package-card" data-reveal>
+					<div class="package-gradient"></div>
+					<h3 class="package-title">Özel Proje</h3>
+					<div class="package-price">₺ 50.000 +</div>
+					<ul class="package-features">
+						<li>Özel Tasarım</li>
+						<li>Gelişmiş Özellikler</li>
+						<li>API Entegrasyonu</li>
+						<li>Admin Paneli</li>
+						<li>Mobil Uygulama</li>
+						<li>12 Ay Destek</li>
+					</ul>
+					<a class="btn primary" href="#iletisim">Teklif Al</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="referanslar" class="section testimonials" aria-labelledby="testimonials-heading">
+		<div class="container">
+			<h2 id="testimonials-heading">Müşterilerimiz ne diyor?</h2>
+			<ul class="testimonial-list" id="testimonialList" role="list" data-reveal>
+				<li class="testimonial is-active">
+					<p>“Hızlı teslimat ve yüksek kalite. Google'da görünürlüğümüz ciddi oranda arttı.”</p>
+					<div class="author">— Ayşe K., Pazarlama Müdürü</div>
+				</li>
+				<li class="testimonial">
+					<p>“Tasarım sürecindeki iletişimleri harikaydı, beklentimizin ötesinde bir web sitesi oldu.”</p>
+					<div class="author">— Mehmet T., Kurucu</div>
+				</li>
+				<li class="testimonial">
+					<p>“Mobil uygulama performansı mükemmel, kullanıcı geri dönüşleri çok olumlu.”</p>
+					<div class="author">— Derya S., Ürün Yöneticisi</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="hakkimizda" class="section about" aria-labelledby="about-heading">
+		<div class="container">
+			<h2 id="about-heading">Hakkımızda</h2>
+			<div class="about-grid" data-reveal>
+				<div>
+					<p>İşletme Adı olarak strateji, tasarım ve teknolojiyi birleştirerek markalara sürdürülebilir büyüme sağlıyoruz. Her projeyi kullanıcı deneyimi, performans ve erişilebilirlik ekseninde ele alıyoruz.</p>
+					<ul class="bullets">
+						<li>SEO odaklı mimari</li>
+						<li>Yüksek Lighthouse skorları</li>
+						<li>WCAG 2.1 erişilebilirlik</li>
+					</ul>
+				</div>
+				<div class="stats">
+					<div class="stat"><span class="num">50+</span><span class="label">Tamamlanan Proje</span></div>
+					<div class="stat"><span class="num">20+</span><span class="label">Aktif Müşteri</span></div>
+					<div class="stat"><span class="num">5+</span><span class="label">Yıllık Deneyim</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="iletisim" class="section contact" aria-labelledby="contact-heading">
+		<div class="container">
+			<h2 id="contact-heading">İletişim</h2>
+			<form id="contactForm" class="contact-form modern-contact-card" method="POST" action="https://formspree.io/f/YOUR_FORM_ID" novalidate data-reveal>
+				<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+				<div class="modern-contact-grid">
+					<div class="modern-contact-fields">
+						<label class="modern-label">
+							<span class="modern-label-text">Ad Soyad</span>
+							<input type="text" name="name" required autocomplete="name" placeholder="Adınızı girin" class="modern-input">
+						</label>
+						<label class="modern-label">
+							<span class="modern-label-text">E-posta</span>
+							<input type="email" name="email" required autocomplete="email" placeholder="ornek@mail.com" class="modern-input">
+						</label>
+						<label class="modern-label">
+							<span class="modern-label-text">Konu</span>
+							<select name="subject" required class="modern-input modern-select">
+								<option value="">Paket seçiniz</option>
+								<option value="Kurumsal Web Sitesi">Kurumsal Web Sitesi - ₺ 15.000 +</option>
+								<option value="E-Ticaret Sitesi">E-Ticaret Sitesi - ₺ 25.000 +</option>
+								<option value="Özel Proje">Özel Proje - ₺ 50.000 +</option>
+								<option value="Temel Drone Çekimi">Temel Drone Çekimi - ₺ 5.000 +</option>
+								<option value="Profesyonel Drone Çekimi">Profesyonel Drone Çekimi - ₺ 8.000 +</option>
+								<option value="Kurumsal Drone Çekimi">Kurumsal Drone Çekimi - ₺ 12.000 +</option>
+								<option value="Temel Logo Tasarımı">Temel Logo Tasarımı - ₺ 2.500 +</option>
+								<option value="Profesyonel Logo Tasarımı">Profesyonel Logo Tasarımı - ₺ 6.000 +</option>
+								<option value="Kurumsal Logo Tasarımı">Kurumsal Logo Tasarımı - ₺ 10.000 +</option>
+							</select>
+						</label>
+					</div>
+					<div class="modern-contact-message">
+						<label class="modern-label">
+							<span class="modern-label-text">Mesaj</span>
+							<textarea name="message" rows="6" required placeholder="Mesajınızı yazın" class="modern-input"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="modern-form-actions">
+					<button type="submit" class="btn primary modern-btn">Gönder</button>
+					<p class="form-status modern-status" role="status" aria-live="polite"></p>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- Lightbox -->
+	<div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">
+		<button class="lightbox-prev" aria-label="Önceki">‹</button>
+		<div class="lightbox-frame">
+			<img class="lightbox-image" alt="Büyük görsel">
+			<button class="lightbox-close" aria-label="Kapat">✕</button>
+		</div>
+		<button class="lightbox-next" aria-label="Sonraki">›</button>
+	</div>
+
+	<button id="backToTop" class="back-to-top" aria-label="Yukarı çık" hidden>↑</button>
+	<footer class="footer-alt" aria-labelledby="footer-heading">
+		<div class="footer-wave" aria-hidden="true">
+			<svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+				<path d="M0,64 C240,96 480,0 720,32 C960,64 1200,112 1440,80 L1440,120 L0,120 Z" fill="currentColor" opacity="0.08"></path>
+			</svg>
+		</div>
+		<div class="container">
+			<h2 id="footer-heading" class="sr-only">Alt Bilgi</h2>
+			<div class="footer-grid">
+				<div class="footer-col brand-col">
+					<a class="brand" href="index.html" aria-label="Anasayfa">
+						<svg class="brand-mark" width="36" height="36" viewBox="0 0 64 64" aria-hidden="true">
+							<defs>
+								<linearGradient id="lgf2" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0%" stop-color="#60a5fa"/>
+									<stop offset="50%" stop-color="#a78bfa"/>
+									<stop offset="100%" stop-color="#34d399"/>
+								</linearGradient>
+							</defs>
+							<rect x="4" y="4" width="56" height="56" rx="14" fill="url(#lgf2)"/>
+							<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">LS</text>
+						</svg>
+						<span class="brand-text">Lumenix Studio</span>
+					</a>
+					<p class="footer-tag">Modern web tasarım, marka ve ürün deneyimleri.</p>
+					<div class="footer-social">
+						<a class="social" href="https://www.instagram.com/opeenproject?igsh=bnRhMzlhaTk4bml5&utm_source=qr" aria-label="Instagram">IG</a>
+						<a class="social" href="https://www.linkedin.com/in/emirhan-%C3%A7am-589402315/" aria-label="LinkedIn">in</a>
+					</div>
+				</div>
+				<nav class="footer-col links-col" aria-label="Hızlı bağlantılar">
+					<h3>Hızlı Bağlantılar</h3>
+					<ul>
+						<li><a href="#hizmetler">Hizmetler</a></li>
+						<li><a href="#portfolyo">Portfolyo</a></li>
+						<li><a href="#referanslar">Referanslar</a></li>
+						<li><a href="#hakkimizda">Hakkımızda</a></li>
+						<li><a href="#iletisim">İletişim</a></li>
+					</ul>
+				</nav>
+				<div class="footer-col contact-col">
+					<h3>İletişim</h3>
+					<ul>
+						<li><a href="mailto:info@lumenix.studio">info@lumenix.studio</a></li>
+						<li><a href="tel:+905000000000">+90 500 000 00 00</a></li>
+						<li>İzmir, Türkiye</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>© <span id="year"></span> Lumenix Studio</p>
+				<div class="legal-links">
+					<a href="#">Gizlilik</a>
+					<a href="#">Kullanım Şartları</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script defer src="assets/js/main.js"></script>
+</body>
+</html>

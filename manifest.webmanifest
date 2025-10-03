@@ -1,0 +1,18 @@
+{
+	"name": "İşletme Adı | Dijital Çözümler",
+	"short_name": "İşletme Adı",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#2563eb",
+	"lang": "tr",
+	"icons": [
+		{
+			"src": "/assets/icons/favicon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		}
+	]
+}
