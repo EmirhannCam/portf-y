@@ -232,18 +232,22 @@
 							<input type="email" name="email" required autocomplete="email" placeholder="ornek@mail.com" class="modern-input">
 						</label>
 						<label class="modern-label">
+							<span class="modern-label-text">Telefon</span>
+							<input type="tel" name="phone" required autocomplete="tel" placeholder="Telefon numaranızı girin" class="modern-input">
+						</label>
+						<label class="modern-label">
 							<span class="modern-label-text">Konu</span>
 							<select name="subject" required class="modern-input modern-select">
 								<option value="">Paket seçiniz</option>
-								<option value="Kurumsal Web Sitesi">Kurumsal Web Sitesi - ₺ 15.000 +</option>
-								<option value="E-Ticaret Sitesi">E-Ticaret Sitesi - ₺ 25.000 +</option>
-								<option value="Özel Proje">Özel Proje - ₺ 50.000 +</option>
-								<option value="Temel Drone Çekimi">Temel Drone Çekimi - ₺ 5.000 +</option>
-								<option value="Profesyonel Drone Çekimi">Profesyonel Drone Çekimi - ₺ 8.000 +</option>
-								<option value="Kurumsal Drone Çekimi">Kurumsal Drone Çekimi - ₺ 12.000 +</option>
-								<option value="Temel Logo Tasarımı">Temel Logo Tasarımı - ₺ 2.500 +</option>
-								<option value="Profesyonel Logo Tasarımı">Profesyonel Logo Tasarımı - ₺ 6.000 +</option>
-								<option value="Kurumsal Logo Tasarımı">Kurumsal Logo Tasarımı - ₺ 10.000 +</option>
+								<option value="Kurumsal Web Sitesi - ₺ 15.000 +">Kurumsal Web Sitesi - ₺ 15.000 +</option>
+								<option value="E-Ticaret Sitesi - ₺ 25.000 +">E-Ticaret Sitesi - ₺ 25.000 +</option>
+								<option value="Özel Proje - ₺ 50.000 +">Özel Proje - ₺ 50.000 +</option>
+								<option value="Temel Drone Çekimi - ₺ 5.000 +">Temel Drone Çekimi - ₺ 5.000 +</option>
+								<option value="Profesyonel Drone Çekimi - ₺ 8.000 +">Profesyonel Drone Çekimi - ₺ 8.000 +</option>
+								<option value="Kurumsal Drone Çekimi - ₺ 12.000 +">Kurumsal Drone Çekimi - ₺ 12.000 +</option>
+								<option value="Temel Logo Tasarımı - ₺ 2.500 +">Temel Logo Tasarımı - ₺ 2.500 +</option>
+								<option value="Profesyonel Logo Tasarımı - ₺ 6.000 +">Profesyonel Logo Tasarımı - ₺ 6.000 +</option>
+								<option value="Kurumsal Logo Tasarımı - ₺ 10.000 +">Kurumsal Logo Tasarımı - ₺ 10.000 +</option>
 							</select>
 						</label>
 					</div>
@@ -333,5 +337,20 @@
 	</footer>
 
 	<script defer src="assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('contactForm');
+  var subjectSelect = form.querySelector('select[name="subject"]');
+  var messageTextarea = form.querySelector('textarea[name="message"]');
+  form.addEventListener('submit', function(e) {
+    var selectedPackage = subjectSelect.value;
+    if(selectedPackage) {
+      if(messageTextarea.value.indexOf(selectedPackage) === -1) {
+        messageTextarea.value = selectedPackage + "\n" + messageTextarea.value;
+      }
+    }
+  });
+});
+</script>
 </body>
 </html>
