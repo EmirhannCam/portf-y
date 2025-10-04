@@ -757,7 +757,7 @@ h3, .h3 {
   letter-spacing: .01em;
 }
 .package-price.modern-price {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #34d399;
   margin-bottom: 1.2rem;
@@ -823,7 +823,7 @@ h3, .h3 {
     font-size: 1.15rem;
   }
   .package-price.modern-price {
-    font-size: 1.05rem;
+    font-size: 1.7rem;
   }
 }
 .package-card .package-gradient {
