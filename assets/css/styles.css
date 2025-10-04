@@ -684,10 +684,13 @@ h3, .h3 {
   font-size: 1.1em;
 }
 .package-card .btn.primary {
-  margin-top: .5rem;
-  width: 100%;
+  display: block;       /* blok haline getir */
+  margin: 0.5rem auto;  /* üst boşluk + yatay ortalama */
+  text-align: center;
+  width: fit-content;   /* içerik genişliğine göre */
   font-size: 1.05rem;
   box-shadow: none;
+  padding: 0.6rem 1.2rem; /* opsiyonel: biraz dolgu ekleyebilirsin */
 }
 .package-card.popular {
   border: 2px solid var(--accent-purple);
