@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 	// Portfolio data with multiple images per item for slider
 	const portfolioItems=[
-		{ id:1, title:'Villa Kiralama', category:'web', tags:['Web','Next.js','SEO'], images:['assets/images/villa1.jpg','assets/images/villa2.jpg','assets/images/villa3.jpg','assets/images/villa4.jpg','assets/images/villa5.jpg','assets/images/villa6.jpg','assets/images/villa7.jpg'] },
+		{ id:1, title:'Villa Kiralama', category:'web', tags:['Web','Next.js','SEO'], images:['assets/images/villa1.jpg','assets/images/villa2.jpg','assets/images/villa3.jpg','assets/images/villa4.jpg','assets/images/villa5.jpg','assets/images/villa6.jpg','assets/images/villa7.jpg']},
 		{ id:2, title:'Eğitici Mobil Uygulama ', category:'mobil', tags:['UI','React Native'], images:['assets/images/eğitim1.jpg','assets/images/eğitim2.jpg','assets/images/eğitim3.jpg','assets/images/eğitim4.jpg','assets/images/eğitim5.jpg','assets/images/eğitim6.jpg','assets/images/eğitim7.jpg'] },
 		{ id:3, title:'Logo Revizyonu', category:'logo', tags:['Vektörel','3D'], images:['assets/images/logo1.jpg','assets/images/logo2.jpg','assets/images/logo3.jpg','assets/images/logo4.jpg'] },
 		{ id:4, title:'BE Health Online Randevu', category:'web', tags:['Web','js','SEO'], images:['assets/images/sağlık1.jpg','assets/images/sağlık2.jpg','assets/images/sağlık3.jpg','assets/images/sağlık4.jpg','assets/images/sağlık5.jpg','assets/images/sağlık6.jpg'] },
