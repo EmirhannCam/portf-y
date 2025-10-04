@@ -12,7 +12,8 @@
 	<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -49,7 +50,7 @@
     </div>
   </header>
 
-	<section class="hero" aria-labelledby="hero-heading">
+	<section class="hero" aria-labelledby="hero-heading" data-aos="fade-up" data-aos-duration="900">
 		<div class="container">
 			<div class="hero-content" data-reveal>
 				<h1 id="hero-heading">Modern, Dinamik ve Güçlü Dijital Deneyimler</h1>
@@ -103,14 +104,6 @@
 		</div>
 	</section>
 
-	<section class="cta-band" aria-label="Hızlı teklif">
-		<div class="container" data-reveal>
-			<h2>Birlikte fark yaratalım</h2>
-			<p>İhtiyacınızı 15 dakikalık ücretsiz görüşmede netleştirelim.</p>
-			<a class="btn primary" href="#iletisim">Ücretsiz Görüşme Planla</a>
-		</div>
-	</section>
-
 	<section id="portfolyo" class="section portfolio" aria-labelledby="portfolio-heading">
 		<div class="container">
 			<div class="section-head">
@@ -125,53 +118,57 @@
 				</div>
 			</div>
 			<ul class="portfolio-grid" id="portfolioGrid" role="list">
+				
 				<!-- JS ile doldurulacak; her kartta slider bulunacak -->
 			</ul>
 			<div class="packages-grid modern-packages">
-				<div class="package-card" data-reveal>
-					<div class="package-gradient"></div>
-					<h3 class="package-title">Kurumsal Web Sitesi</h3>
-					<div class="package-price">₺ 15.000 +</div>
-					<ul class="package-features">
-						<li>Responsive Tasarım</li>
-						<li>SEO Optimizasyonu</li>
-						<li>5-10 Sayfa</li>
-						<li>İletişim Formu</li>
-						<li>Google Analytics</li>
-						<li>3 Ay Destek</li>
-					</ul>
-					<a class="btn primary" href="#iletisim">Teklif Al</a>
-				</div>
-				<div class="package-card popular" data-reveal>
-					<span class="package-badge">Popüler</span>
-					<div class="package-gradient"></div>
-					<h3 class="package-title">E-Ticaret Sitesi</h3>
-					<div class="package-price">₺ 25.000 +</div>
-					<ul class="package-features">
-						<li>Responsive Tasarım</li>
-						<li>SEO Optimizasyonu</li>
-						<li>Ürün Kataloğu</li>
-						<li>Ödeme Sistemi</li>
-						<li>Stok Yönetimi</li>
-						<li>6 Ay Destek</li>
-					</ul>
-					<a class="btn primary" href="#iletisim">Teklif Al</a>
-				</div>
-				<div class="package-card" data-reveal>
-					<div class="package-gradient"></div>
-					<h3 class="package-title">Özel Proje</h3>
-					<div class="package-price">₺ 50.000 +</div>
-					<ul class="package-features">
-						<li>Özel Tasarım</li>
-						<li>Gelişmiş Özellikler</li>
-						<li>API Entegrasyonu</li>
-						<li>Admin Paneli</li>
-						<li>Mobil Uygulama</li>
-						<li>12 Ay Destek</li>
-					</ul>
-					<a class="btn primary" href="#iletisim">Teklif Al</a>
-				</div>
-			</div>
+	<div class="package-card modern-card" data-reveal>
+		<div class="package-gradient"></div>
+		<div class="package-icon" aria-hidden="true">🖥️</div>
+		<h3 class="package-title modern-title">Kurumsal Web Sitesi</h3>
+		<div class="package-price modern-price">₺ 15.000 +</div>
+		<ul class="package-features modern-features">
+			<li>✨ Responsive Tasarım</li>
+			<li>🔍 SEO Optimizasyonu</li>
+			<li>📄 5-10 Sayfa</li>
+			<li>✉️ İletişim Formu</li>
+			<li>📊 Google Analytics</li>
+			<li>🛡️ 3 Ay Destek</li>
+		</ul>
+		<a class="btn primary modern-btn" href="#iletisim">Teklif Al</a>
+	</div>
+	<div class="package-card modern-card popular" data-reveal>
+		<span class="package-badge">Popüler</span>
+		<div class="package-gradient"></div>
+		<div class="package-icon" aria-hidden="true">🛒</div>
+		<h3 class="package-title modern-title">E-Ticaret Sitesi</h3>
+		<div class="package-price modern-price">₺ 25.000 +</div>
+		<ul class="package-features modern-features">
+			<li>✨ Responsive Tasarım</li>
+			<li>🔍 SEO Optimizasyonu</li>
+			<li>📦 Ürün Kataloğu</li>
+			<li>💳 Ödeme Sistemi</li>
+			<li>📦 Stok Yönetimi</li>
+			<li>🛡️ 6 Ay Destek</li>
+		</ul>
+		<a class="btn primary modern-btn" href="#iletisim">Teklif Al</a>
+	</div>
+	<div class="package-card modern-card" data-reveal>
+		<div class="package-gradient"></div>
+		<div class="package-icon" aria-hidden="true">🚀</div>
+		<h3 class="package-title modern-title">Özel Proje</h3>
+		<div class="package-price modern-price">₺ 50.000 +</div>
+		<ul class="package-features modern-features">
+			<li>🎨 Özel Tasarım</li>
+			<li>⚡ Gelişmiş Özellikler</li>
+			<li>🔗 API Entegrasyonu</li>
+			<li>🛠️ Admin Paneli</li>
+			<li>📱 Mobil Uygulama</li>
+			<li>🛡️ 12 Ay Destek</li>
+		</ul>
+		<a class="btn primary modern-btn" href="#iletisim">Teklif Al</a>
+	</div>
+</div>
 		</div>
 	</section>
 
@@ -208,9 +205,9 @@
 					</ul>
 				</div>
 				<div class="stats">
-					<div class="stat"><span class="num">50+</span><span class="label">Tamamlanan Proje</span></div>
-					<div class="stat"><span class="num">20+</span><span class="label">Aktif Müşteri</span></div>
-					<div class="stat"><span class="num">5+</span><span class="label">Yıllık Deneyim</span></div>
+					<div class="stat"><span class="num">50+</span><span class="label"> Tamamlanan Proje</span></div>
+					<div class="stat"><span class="num">20+</span><span class="label"> Aktif Müşteri</span></div>
+					<div class="stat"><span class="num">5+</span><span class="label"> Yıllık Deneyim</span></div>
 				</div>
 			</div>
 		</div>
@@ -328,10 +325,7 @@
 			</div>
 			<div class="footer-bottom">
 				<p>© <span id="year"></span> Lumenix Studio</p>
-				<div class="legal-links">
-					<a href="#">Gizlilik</a>
-					<a href="#">Kullanım Şartları</a>
-				</div>
+				
 			</div>
 		</div>
 	</footer>
@@ -354,3 +348,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({once:true,disable:'phone',duration:900,easing:'ease-out-cubic'});</script>
